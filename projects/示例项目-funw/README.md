@@ -23,3 +23,4 @@ pip install -r requirements.txt
 # 2. 将待检测文件放入 /docs 目录
 # 3. 运行主程序
 python main.py --dir ./docs
+```

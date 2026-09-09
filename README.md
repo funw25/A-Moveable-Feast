@@ -43,7 +43,9 @@
 
 ## ✍️ 如何上传你的项目？
 
-我们提供了两种方式，新手推荐用网页操作，完全不需要 Git 命令。
+我们提供两种入口：不熟悉 Git 的同学可以先通过 [项目投稿表单](https://github.com/funw25/A-Moveable-Feast/issues/new?template=submit-project.yml) 登记；熟悉 GitHub 的同学可以直接通过 Pull Request 投稿。完整要求请阅读 [参与贡献指南](CONTRIBUTING.md)。
+
+已经收录的作品可以在 [项目目录](projects/README.md) 中查看。
 
 ### 🖥️ 方式一：网页端上传（零基础适用）
 
@@ -58,11 +60,12 @@
 ### 🧑‍💻 方式二：Git 命令行（熟练者）
 
 ```bash
-git clone https://github.com/你的用户名/student-projects.git
-cd student-projects
+git clone https://github.com/你的用户名/A-Moveable-Feast.git
+cd A-Moveable-Feast
 mkdir -p projects/你的项目名-你的用户名
 # 把项目文件复制进去
 git add .
 git commit -m "添加项目：你的项目名"
 git push origin main
 # 然后到 GitHub 上发起 Pull Request
+```
