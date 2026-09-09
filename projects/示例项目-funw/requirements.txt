@@ -1,0 +1,5 @@
+scikit-learn>=1.0.0
+matplotlib>=3.5.0
+python-docx>=0.8.11
+PyMuPDF>=1.19.0
+jieba>=0.42.1
