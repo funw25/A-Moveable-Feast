@@ -1,0 +1,152 @@
+name: 提交项目
+description: 向 A Moveable Feast｜流动的盛宴推荐你的个人或团队项目
+title: "[项目投稿] "
+labels:
+  - project-submission
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你向 **A Moveable Feast｜流动的盛宴** 投稿！
+
+        项目不必十分成熟，一个周末完成的 Demo、正在开发的工具，
+        或一次认真完成的技术探索都可以提交。
+
+        请勿填写密码、访问令牌、个人隐私或其他敏感信息。
+
+  - type: input
+    id: project-name
+    attributes:
+      label: 项目名称
+      description: 请填写项目的公开名称。
+      placeholder: 例如：校园地图助手
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: 作者或团队
+      description: 可以填写 GitHub 用户名、团队名称或希望展示的署名。
+      placeholder: 例如：@username / Example Team
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 项目类型
+      description: 请选择最符合项目内容的分类。
+      options:
+        - Web / App
+        - AI / Machine Learning
+        - Data / Visualization
+        - Tools / Automation
+        - Systems / Hardware
+        - Creative Coding
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: 项目状态
+      options:
+        - 构思中
+        - 开发中
+        - 可体验
+        - 已完成
+        - 暂停维护
+    validations:
+      required: true
+
+  - type: input
+    id: repository
+    attributes:
+      label: 项目地址
+      description: 填写代码仓库或项目主页链接；若暂未公开，请说明。
+      placeholder: https://github.com/username/project
+    validations:
+      required: true
+
+  - type: input
+    id: demo
+    attributes:
+      label: 演示地址
+      description: 可填写在线演示、视频或作品展示链接，没有可以留空。
+      placeholder: https://example.com
+
+  - type: input
+    id: tech-stack
+    attributes:
+      label: 技术栈
+      description: 简要列出主要语言、框架、模型、硬件或工具。
+      placeholder: Python, FastAPI, React, PyTorch
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 项目简介
+      description: 说明项目解决什么问题、有哪些主要功能。
+      placeholder: |
+        这个项目主要用于……
+        当前已经实现……
+    validations:
+      required: true
+
+  - type: textarea
+    id: contribution
+    attributes:
+      label: 你的工作
+      description: 说明你在项目中具体负责的部分；团队项目请简要注明分工。
+      placeholder: 我主要负责……
+    validations:
+      required: true
+
+  - type: textarea
+    id: usage
+    attributes:
+      label: 如何运行或体验
+      description: 提供简要的安装、运行或体验方法。
+      placeholder: |
+        1. 克隆项目
+        2. 安装依赖
+        3. 运行……
+    validations:
+      required: true
+
+  - type: textarea
+    id: help-wanted
+    attributes:
+      label: 希望获得的帮助
+      description: 可以填写希望获得的反馈、需要解决的问题或希望寻找的协作者。
+      placeholder: 希望有人帮助改进 UI，或一起完善模型效果。
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 补充说明
+      description: 可以补充截图、项目经历、AI 工具使用情况或其他信息。
+      placeholder: 将图片拖入这里即可上传。
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: 投稿确认
+      description: 请确认以下内容后再提交。
+      options:
+        - label: 我本人实际参与了该项目，并已如实说明自己的工作。
+          required: true
+        - label: 团队项目已经获得其他成员同意，可以在此公开展示。
+          required: true
+        - label: 项目不包含密码、密钥、个人隐私或其他敏感信息。
+          required: true
+        - label: 项目不包含作业代写、考试答案、盗版资源或未经许可的内容。
+          required: true
+        - label: 我理解项目被收录不代表代码自动开源，代码使用方式以原项目许可证为准。
+          required: true
+        - label: 我理解本社区由学生自发维护，不代表任何学校或学院的官方立场。
+          required: true
